@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kayla Tang | Fullstack Software Engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="header" id="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <a href="../index.html" class="btn active">Work</a>
+      <a href="../projects.html" class="btn">Projects</a>
+      <a href="../about.html" class="btn">About</a>
+      <!--<a href="#resume" class="btn">Resume</a>-->
+    </div>
+
+    <p style="padding-left: 5%;"><a href="../index.html"> <i class="fa fa-chevron-left" aria-hidden="true"></i> Go Back </a></p>
+    <div class="container">
+      <div class="left">
+        <div class="proj-media">
+            <img src="../assets/highbay.GIF" alt="Avatar" />
+        </div>
+ 
+        <h2>JPL Finance Tools Development <i class="fa fa-rocket" aria-hidden="true"></i></i></h2>
+        <p>Skills: React, MySQL, OracleERP, PowerBI</p>
+        <br>
+        <p>Overview</p>
+        <p style="color: black;">While supporting the finance team within the 
+            Production Control department, I contributed to two process improvement 
+            initiatives:
+            <ol>
+                <li>Cost Estimation Tool: Designed to help manufacturing teams 
+                    quickly estimate costs for new builds and avoid overspending in 
+                    weekly billing.</li>
+                <li>Automated Billing Uploads: Maintained and improved a script to 
+                    streamline billing data transfers to the Oracle ERP system, 
+                    ensuring accuracy and proper filing.</li>
+            </ol>
+
+        </p>
+        <p>Research</p>
+        <p style="color: black;">My team spoke with finance team members to 
+            understand how cost estimates were being calculated manually (a lot of 
+            math was done in Excel while figuring it out). We also had to learn 
+            about automating file uploads, OracleERP and it's database, and how 
+            to send automated emails to LDAP groups for confirmation or errors.
+        </p>
+        <p>Goals</p>
+        <ul>
+            <li>Reduce time and effort required for teams to obtain accurate build cost estimates.</li>
+            <li>Eliminate errors and delays in weekly billing uploads.</li>
+            <li>Ensuring builds stayed within budget.</li>
+        </ul>
+        <p>Obstacles</p>
+        <ul>
+            <li>Many different coatings and components that made cost prediction challenging.</li>
+            <li>Testing with a non-Oracle database before connecting to the real one.</li>
+            <li>Updated security no longer allowed for access to the SharePoint we passed the files through.</li>
+        </ul>
+        <p>Solution</p>
+        <ul>
+            <li>Built a cost estimation tool that calculated build costs based on component selections, quantities, and custom additions.</li>
+            <li>Maintained the billing upload automation script, including error handling and automatic archival of submitted files.</li>
+            <li>Automated emails to the finance team with the returned files that needed review.</li>
+        </ul>
+        <p>Results</p>
+        <ul>
+            <li>Reduced cost estimation time from hours to minutes for manufacturing teams.</li>
+            <li>Provided finance with more accurate pre-billing data, lowering overspending incidents.</li>
+            <li>Automated billing uploads improved data accuracy and ensured timely submission to Oracle ERP.</li>
+        </ul>
+        <p>Reflection</p>
+        <p style="color: black;">
+            Working on these tools strengthened my ability to bridge technical 
+            solutions with finance and manufacturing needs. I also had to get comfortable 
+            working through the errors without assistance to check from the 
+            database submissions (Oracle lead please respond). Even though I'm not 
+            part of the team anymore, I worry on the constraints of the proposed 
+            budget knowing how much the department has to spend on hardware.
+        </p> 
+        <div class="proj-media">
+            <img src="../assets/2026-budget.png" alt="" />
+        </div>
+        </div>  
+    </div>
+    <br>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
