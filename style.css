@@ -19,13 +19,14 @@ body {
 }
 
 .header {
-  overflow: hidden;
-  padding: 10px 0px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0;
+  flex-wrap: wrap; 
 }
 
 .header a {
   font-family: "Mozilla Headline", sans-serif;
-  float: right;
   display: block;
   color: grey;
   text-align: center;
@@ -44,6 +45,7 @@ body {
 
 .header .icon {
   display: none;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 600px) {
@@ -55,11 +57,15 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .header.responsive {position: relative;}
+  .header.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .header.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative; 
+    right: auto;
+    top: auto;
+    margin-left: auto;
   }
   .header.responsive a {
     float: none;
@@ -69,8 +75,9 @@ body {
 }
 
 .container {
+  clear: both;
   font-size: 18px;
-  padding: 0px 75px;
+  padding: 0px 5%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
