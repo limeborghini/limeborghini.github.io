@@ -99,6 +99,7 @@ a {
 }
 
 h2, h4 {
+  color: black;
   font-family: "Mozilla Headline", sans-serif;
 }
 
@@ -265,16 +266,40 @@ details > summary::-webkit-details-marker {
   }
 }
 
-.proj-media {
+.proj-media, .proj-media-2 {
  text-align: center;
-}
+} 
 
 .proj-media img {
   width: 50%;
 }
 
-@media screen and (max-width: 600px) {
+.container-2 {
+  clear: both;
+  font-size: 18px;
+  padding: 0px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; 
+}
+
+.proj-media-2 img {
+  width: 80%;
+}
+
+@media (max-width: 1000px) {
   .proj-media img {
     width: 90%;
+  }
+
+  .container-2 {
+    margin-left: -5%;
+    flex-direction: column; 
+  }
+
+  .proj-media-2 img {
+    margin-left: 5%;
+    width: 95%;
   }
 }
