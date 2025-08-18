@@ -161,7 +161,7 @@ li {
   box-shadow: 0 4px 8px 0 rgba(4, 66, 35, 0.2);
   transition: 0.3s;
   width: 30%;
-  /* width: 22%;  */
+  text-align: center;
   background: white;
 }
 
@@ -170,7 +170,7 @@ li {
 }
 
 .cards-info {
-  padding: 5px 20px;
+  padding-bottom: 20px; 
 }
 
 .card img {
@@ -303,3 +303,30 @@ details > summary::-webkit-details-marker {
     width: 95%;
   }
 }
+
+.skill-tag {
+  border-radius: 12px;
+  border: solid 3px;
+  padding: 2px 5px;
+  font-size: 0.85em;
+  margin: 2px 4px 2px 0;
+  display: inline-block;
+  font-weight: 500;
+  font-family: 'Monaco', monospace;
+}
+
+.aws {border-color:  #b6a529; color: #b6a529;} 
+.webdev {border-color: #2965f1; color: #2965f1;}
+.gamedev {border-color: #8e44ad; color: #8e44ad;}
+.figma {border-color: #b84031; color: #b84031;}
+.edu {border-color: #754047; color: #754047;}
+.research {border-color: #697522; color: #697522;}
+.ai {border-color: #851071; color: #851071;} 
+.comm {border-color: #393541; color: #393541;}
+.feedback {border-color: #c95e93; color: #c95e93;} 
+.api {border-color: #db611a; color: #db611a;} 
+.cyber {border-color: #0a1638; color: #0a1638;} 
+.mobile {border-color: #167723; color: #167723;} 
+.ml {border-color: #42211e; color: #42211e;} 
+.data {border-color: #787cb5; color: #787cb5;}
+.wireframe {border-color: #00758f; color: #00758f;}
