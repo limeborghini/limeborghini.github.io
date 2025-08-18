@@ -1,3 +1,11 @@
+/* Change title when switching tabs */
+window.addEventListener("blur", () =>{
+  document.title = "Come back :("
+})
+window.addEventListener("focus", () =>{
+  document.title = "Kayla Tang | Portfolio"
+})
+
 /* Navbar */
 function myFunction() {
   var x = document.getElementById("topnav");
@@ -31,6 +39,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
+/* Switching to project pages */
 function redirectToPage(url) {
   window.location.href = url;
 }
