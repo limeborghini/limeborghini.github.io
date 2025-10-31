@@ -7,11 +7,8 @@
     "wdth" 100;
 }
 
-html {
-  background-color: #fafffc;
-}
-
 body {
+  background-color: #fafffc;
   position: relative;
 }
 
