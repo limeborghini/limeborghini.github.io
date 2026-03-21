@@ -1,10 +1,10 @@
-.mozilla-headline-<uniquifier> {
-  font-family: "Mozilla Headline", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+/* ============================================================
+   Base & Reset
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 body {
@@ -12,11 +12,35 @@ body {
   position: relative;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h2,
+h4 {
+  color: black;
+  font-family: "Mozilla Headline", sans-serif;
+}
+
+p {
+  font-family: "Monaco", monospace;
+  color: grey;
+}
+
+li {
+  color: black;
+  font-family: "Monaco", monospace;
+}
+
+/* ============================================================
+   Navigation Header
+   ============================================================ */
 .header {
   display: flex;
   justify-content: flex-end;
   padding: 10px 0;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .header a {
@@ -29,12 +53,9 @@ body {
   font-size: 18px;
 }
 
-.header a:hover {
-  color: rgb(18, 136, 77);
-}
-
+.header a:hover,
 .header a.active {
-  color:  rgb(18, 136, 77);
+  color: rgb(18, 136, 77);
 }
 
 .header .icon {
@@ -43,24 +64,27 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .header a {display: none;}
+  .header a {
+    display: none;
+  }
+
   .header a.icon {
     float: right;
     display: block;
   }
-}
 
-@media screen and (max-width: 600px) {
   .header.responsive {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .header.responsive .icon {
-    position: relative; 
+    position: relative;
     right: auto;
     top: auto;
     margin-left: auto;
   }
+
   .header.responsive a {
     float: none;
     display: block;
@@ -68,54 +92,52 @@ body {
   }
 }
 
+/* ============================================================
+   Layout
+   ============================================================ */
 .container {
   clear: both;
   font-size: 18px;
-  padding: 0px 5%;
+  padding: 0 5%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px; 
-}
-
-.left, .right {
-  flex: 1; 
-}
-
-.left {
-  min-width: 250px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
+  gap: 20px;
 }
 
 .container a:hover {
   text-decoration: underline;
 }
 
-h2, h4 {
-  color: black;
-  font-family: "Mozilla Headline", sans-serif;
+.left,
+.right {
+  flex: 1;
 }
 
-p {
-  font-family: 'Monaco', monospace;
-  color: grey;
+.left {
+  min-width: 250px;
 }
 
-li {
-   color: black;
-   font-family: 'Monaco', monospace;
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
 }
 
+/* ============================================================
+   Experience List
+   ============================================================ */
 .exp {
   max-width: 600px;
 }
 
 .exp-item {
-  font-family: 'Monaco', monospace;
+  font-family: "Monaco", monospace;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -130,16 +152,9 @@ li {
   }
 }
 
-@media (max-width: 600px) {
-  .container {
-    flex-direction: column; 
-  }
-
-  .left, .right {
-    width: 100%;
-  }
-}
-
+/* ============================================================
+   Cards
+   ============================================================ */
 .cards-wrapper {
   padding-top: 50px;
   display: flex;
@@ -148,7 +163,7 @@ li {
   gap: 20px;
 }
 
-.cards-wrapper a{
+.cards-wrapper a {
   text-decoration: none;
 }
 
@@ -156,10 +171,11 @@ li {
   border: none;
   border-radius: 5%;
   box-shadow: 0 4px 8px 0 rgba(4, 66, 35, 0.2);
-  transition: 0.3s;
+  transition: box-shadow 0.3s;
   width: 30%;
   text-align: center;
   background: white;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -167,7 +183,7 @@ li {
 }
 
 .cards-info {
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
 
 .card img {
@@ -178,16 +194,9 @@ li {
   object-fit: cover;
 }
 
-details > summary {
-  list-style: none;
-}
-details > summary::-webkit-details-marker {
-  display: none;
-}
-
 @media (max-width: 900px) {
   .card {
-    width: 45%; 
+    width: 45%;
   }
 }
 
@@ -197,8 +206,39 @@ details > summary::-webkit-details-marker {
   }
 }
 
-* {box-sizing:border-box}
+/* ============================================================
+   Skill Tags
+   ============================================================ */
+.skill-tag {
+  border-radius: 12px;
+  border: solid 3px;
+  padding: 2px 5px;
+  font-size: 0.85em;
+  margin: 2px 4px 2px 0;
+  display: inline-block;
+  font-weight: 500;
+  font-family: "Monaco", monospace;
+}
 
+.aws      { border-color: #b6a529; color: #b6a529; }
+.webdev   { border-color: #2965f1; color: #2965f1; }
+.gamedev  { border-color: #8e44ad; color: #8e44ad; }
+.figma    { border-color: #b84031; color: #b84031; }
+.edu      { border-color: #754047; color: #754047; }
+.research { border-color: #697522; color: #697522; }
+.ai       { border-color: #851071; color: #851071; }
+.comm     { border-color: #393541; color: #393541; }
+.feedback { border-color: #c95e93; color: #c95e93; }
+.api      { border-color: #db611a; color: #db611a; }
+.cyber    { border-color: #0a1638; color: #0a1638; }
+.mobile   { border-color: #167723; color: #167723; }
+.ml       { border-color: #42211e; color: #42211e; }
+.data     { border-color: #787cb5; color: #787cb5; }
+.wireframe { border-color: #00758f; color: #00758f; }
+
+/* ============================================================
+   Slideshow
+   ============================================================ */
 .slideshow-container {
   max-width: 75%;
   position: relative;
@@ -209,8 +249,9 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 
-.prev, .next {
-  background-color: rgba(0,0,0,0.3);
+.prev,
+.next {
+  background-color: rgba(0, 0, 0, 0.3);
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -220,7 +261,7 @@ details > summary::-webkit-details-marker {
   color: white;
   font-weight: bold;
   font-size: 30px;
-  transition: 0.6s ease;
+  transition: background-color 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
@@ -230,12 +271,13 @@ details > summary::-webkit-details-marker {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.5);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.text {
-  font-family: 'Monaco', monospace;
+.slide-caption {
+  font-family: "Monaco", monospace;
   color: #f2f2f2;
   background-color: black;
   opacity: 0.5;
@@ -253,8 +295,8 @@ details > summary::-webkit-details-marker {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from { opacity: 0.4; }
+  to   { opacity: 1; }
 }
 
 @media screen and (max-width: 600px) {
@@ -263,22 +305,33 @@ details > summary::-webkit-details-marker {
   }
 }
 
-.proj-media, .proj-media-2 {
- text-align: center;
-} 
+/* ============================================================
+   Project Pages
+   ============================================================ */
+.back-link {
+  padding-left: 5%;
+}
 
-.proj-media img {
-  width: 50%;
+.proj-body-text {
+  color: black;
 }
 
 .container-2 {
-  clear: both;
   font-size: 18px;
-  padding: 0px 5%;
+  padding: 0 5%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px; 
+  gap: 20px;
+}
+
+.proj-media,
+.proj-media-2 {
+  text-align: center;
+}
+
+.proj-media img {
+  width: 50%;
 }
 
 .proj-media-2 img {
@@ -292,7 +345,7 @@ details > summary::-webkit-details-marker {
 
   .container-2 {
     margin-left: -5%;
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .proj-media-2 img {
@@ -301,29 +354,20 @@ details > summary::-webkit-details-marker {
   }
 }
 
-.skill-tag {
-  border-radius: 12px;
-  border: solid 3px;
-  padding: 2px 5px;
-  font-size: 0.85em;
-  margin: 2px 4px 2px 0;
-  display: inline-block;
-  font-weight: 500;
-  font-family: 'Monaco', monospace;
+/* ============================================================
+   Details / Summary (removes default marker)
+   ============================================================ */
+details > summary {
+  list-style: none;
 }
 
-.aws {border-color:  #b6a529; color: #b6a529;} 
-.webdev {border-color: #2965f1; color: #2965f1;}
-.gamedev {border-color: #8e44ad; color: #8e44ad;}
-.figma {border-color: #b84031; color: #b84031;}
-.edu {border-color: #754047; color: #754047;}
-.research {border-color: #697522; color: #697522;}
-.ai {border-color: #851071; color: #851071;} 
-.comm {border-color: #393541; color: #393541;}
-.feedback {border-color: #c95e93; color: #c95e93;} 
-.api {border-color: #db611a; color: #db611a;} 
-.cyber {border-color: #0a1638; color: #0a1638;} 
-.mobile {border-color: #167723; color: #167723;} 
-.ml {border-color: #42211e; color: #42211e;} 
-.data {border-color: #787cb5; color: #787cb5;}
-.wireframe {border-color: #00758f; color: #00758f;}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* ============================================================
+   Footer Note
+   ============================================================ */
+.footer-note {
+  text-align: center;
+}

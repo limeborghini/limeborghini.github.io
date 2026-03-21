@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Kayla Tang | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -18,44 +18,58 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header" id="topnav">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <nav class="header" id="topnav">
+      <button class="icon" aria-label="Toggle navigation" onclick="myFunction()">
         <i class="fa fa-bars"></i>
-      </a>
-
+      </button>
       <a href="index.html" class="btn">Work</a>
       <a href="projects.html" class="btn active">Projects</a>
       <a href="about.html" class="btn">About Me</a>
-      <!--<a href="#resume" class="btn">Resume</a>-->
-    </div>
+    </nav>
 
     <div class="container">
-      <div class="">
+      <div>
         <h2>Lime sharpens taste, learning sharpens the mind <i class="fa fa-lemon-o" aria-hidden="true"></i></h2>
         <p>
           Mentoring students
-          <a href="https://cppcss.club/" target="_blank">@cppcss</a>, providing
+          <a href="https://cppcss.club/" target="_blank" rel="noopener noreferrer">@cppcss</a>, providing
           project guidance
-          <a href="https://www.cppshecodes.com/" target="_blank">@cppshecodes</a
-          >, and starting new personal projects.
+          <a href="https://www.cppshecodes.com/" target="_blank" rel="noopener noreferrer">@cppshecodes</a>,
+          and starting new personal projects.
         </p>
       </div>
     </div>
 
     <div class="cards-wrapper">
-
       <div class="card">
-        <img src="assets/eli5-office.JPG" alt="Avatar" style="width:100%">
+        <img src="assets/nemt-van.jpg" alt="NEMT App" />
         <div class="cards-info">
-          <h4><b>ELI5 Discord Bot</b></h4> 
-          <p>In Progress</p> 
+          <h4>NEMT App</h4>
+          <p>In Progress</p>
         </div>
       </div>
 
       <div class="card">
-        <img src="assets/rosehack.jpg" alt="Avatar" style="width: 100%" />
+        <img src="assets/eli5-office.JPG" alt="ELI5 Discord Bot" />
         <div class="cards-info">
-          <h4><b>UCR Hackathon</b></h4>
+          <h4>ELI5 Discord Bot</h4>
+          <p>In Progress</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/broncohacks-logo.png" alt="BroncoHacks Judge" />
+        <div class="cards-info">
+          <h4>BroncoHacks Judge</h4>
+          <p>2026</p>
+          <p>Upcoming</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/rosehack.jpg" alt="UCR Hackathon" />
+        <div class="cards-info">
+          <h4>UCR Hackathon</h4>
           <p>2021 - Placed 1st in category</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
@@ -65,9 +79,9 @@
       </div>
 
       <div class="card">
-        <img src="assets/avanade1.JPEG" alt="Avatar" style="width: 100%" />
+        <img src="assets/avanade1.JPEG" alt="Avanade Hackathon 2021" />
         <div class="cards-info">
-          <h4><b>Avanade Hackathon 2021</b></h4>
+          <h4>Avanade Hackathon 2021</h4>
           <p>2021 - Placed 2nd</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
@@ -78,9 +92,9 @@
       </div>
 
       <div class="card">
-        <img src="assets/prompt-study.PNG" alt="Avatar" style="width: 100%" />
+        <img src="assets/prompt-study.PNG" alt="Prompt Engineering Study" />
         <div class="cards-info">
-          <h4><b>Prompt Engineering Study</b></h4>
+          <h4>Prompt Engineering Study</h4>
           <p>2023-2024</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
@@ -91,9 +105,9 @@
       </div>
 
       <div class="card">
-        <img src="assets/avanade2.jpg" alt="Avatar" style="width: 100%" />
+        <img src="assets/avanade2.jpg" alt="Avanade Hackathon 2022" />
         <div class="cards-info">
-          <h4><b>Avanade Hackathon 2022</b></h4>
+          <h4>Avanade Hackathon 2022</h4>
           <p>2022 - Placed 2nd</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
@@ -104,9 +118,9 @@
       </div>
 
       <div class="card">
-        <img src="assets/restaurant.jpeg" alt="Avatar" style="width: 100%" />
+        <img src="assets/restaurant.jpeg" alt="Restaurant Recommender" />
         <div class="cards-info">
-          <h4><b>Restaurant Recommender</b></h4>
+          <h4>Restaurant Recommender</h4>
           <p>2024</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
@@ -119,9 +133,9 @@
       </div>
 
       <div class="card">
-        <img src="assets/liquidhacks.jpg" alt="Avatar" style="width: 100%" />
+        <img src="assets/liquidhacks.jpg" alt="Team Liquid Hackathon" />
         <div class="cards-info">
-          <h4><b>Team Liquid Hackathon</b></h4>
+          <h4>Team Liquid Hackathon</h4>
           <p>2021 - Honorable mention</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
@@ -132,9 +146,9 @@
       </div>
 
       <div class="card">
-        <img src="assets/slp.jpg" alt="Avatar" style="width: 100%" />
+        <img src="assets/slp.jpg" alt="Semester-Long Project Judge" />
         <div class="cards-info">
-          <h4><b>Semester-Long Project Judge</b></h4>
+          <h4>Semester-Long Project Judge</h4>
           <p>2024</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
@@ -145,10 +159,10 @@
       </div>
 
       <div class="card">
-        <img src="assets/teams-redesign.jpg" alt="Avatar" style="width:100%">
+        <img src="assets/teams-redesign.jpg" alt="Microsoft Teams Redesign" />
         <div class="cards-info">
-          <h4><b>Microsoft Teams Redesign</b></h4> 
-          <p>2022</p> 
+          <h4>Microsoft Teams Redesign</h4>
+          <p>2022</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
             <span class="skill-tag figma"><i class="fa fa-object-group" aria-hidden="true"></i> Figma</span>
@@ -158,9 +172,9 @@
       </div>
 
       <div class="card">
-        <img src="assets/gencyber-logo.png" alt="Avatar" style="width: 100%" />
+        <img src="assets/gencyber-logo.png" alt="GenCyber Camp Teaching Assistant" />
         <div class="cards-info">
-          <h4><b>GenCyber Camp Teaching Assistant</b></h4>
+          <h4>GenCyber Camp Teaching Assistant</h4>
           <p>2023</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
@@ -169,12 +183,12 @@
           </div>
         </div>
       </div>
-    
+
       <div class="card">
-        <img src="assets/wireframe.jpg" alt="Avatar" style="width:100%">
+        <img src="assets/wireframe.jpg" alt="Kitchen Tools Mobile App" />
         <div class="cards-info">
-          <h4><b>Kitchen Tools Mobile App</b></h4> 
-          <p>2022</p> 
+          <h4>Kitchen Tools Mobile App</h4>
+          <p>2022</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
             <span class="skill-tag wireframe"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> wireframing</span>
@@ -184,10 +198,10 @@
       </div>
 
       <div class="card">
-        <img src="assets/kaggle.jpg" alt="Avatar" style="width:100%">
+        <img src="assets/kaggle.jpg" alt="Housing Price Analysis" />
         <div class="cards-info">
-          <h4><b>Housing Price Analysis</b></h4> 
-          <p>2023</p> 
+          <h4>Housing Price Analysis</h4>
+          <p>2023</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
             <span class="skill-tag data"><i class="fa fa-bar-chart" aria-hidden="true"></i> data analysis</span>
@@ -197,10 +211,10 @@
       </div>
 
       <div class="card">
-        <img src="assets/ignitecs.JPG" alt="Avatar" style="width:100%">
+        <img src="assets/ignitecs.JPG" alt="Middle School Hackathon Judge" />
         <div class="cards-info">
-          <h4><b>Middle School Hackathon Judge</b></h4> 
-          <p>2021</p> 
+          <h4>Middle School Hackathon Judge</h4>
+          <p>2021</p>
           <div class="skills">
             <span><i class="fa fa-tags" aria-hidden="true"></i>:</span>
             <span class="skill-tag comm"><i class="fa fa-microphone" aria-hidden="true"></i> communication</span>
@@ -208,7 +222,6 @@
           </div>
         </div>
       </div>
-      <br>
     </div>
 
     <script src="script.js"></script>

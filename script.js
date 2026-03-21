@@ -1,45 +1,41 @@
 /* Change title when switching tabs */
-window.addEventListener("blur", () =>{
-  document.title = "Come back :("
-})
-window.addEventListener("focus", () =>{
-  document.title = "Kayla Tang | Portfolio"
-})
+window.addEventListener("blur", () => {
+  document.title = "Come back :(";
+});
+
+window.addEventListener("focus", () => {
+  document.title = "Kayla Tang | Portfolio";
+});
 
 /* Navbar */
 function myFunction() {
-  var x = document.getElementById("topnav");
-  if (x.className === "header") {
-    x.className += " responsive";
-  } else {
-    x.className = "header";
+  const nav = document.getElementById("topnav");
+  nav.classList.toggle("responsive");
+}
+
+/* Image slideshow — only runs on pages that have one */
+const slides = document.getElementsByClassName("mySlides");
+
+if (slides.length > 0) {
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-}
 
-/* Image gallery */ 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
-  slides[slideIndex-1].style.display = "block";
-}
 
-/* Switching to project pages */
-function redirectToPage(url) {
-  window.location.href = url;
+  function showSlides(n) {
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+
+    for (const slide of slides) {
+      slide.style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+  }
 }

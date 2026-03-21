@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Kayla Tang | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -18,79 +18,83 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div class="header" id="topnav">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <nav class="header" id="topnav">
+      <button class="icon" aria-label="Toggle navigation" onclick="myFunction()">
         <i class="fa fa-bars"></i>
-      </a>
-
+      </button>
       <a href="../index.html" class="btn active">Work</a>
       <a href="../projects.html" class="btn">Projects</a>
       <a href="../about.html" class="btn">About Me</a>
-      <!--<a href="#resume" class="btn">Resume</a>-->
-    </div>
+    </nav>
 
-    <p style="padding-left: 5%;"><a href="../index.html"> <i class="fa fa-chevron-left" aria-hidden="true"></i> Go Back </a></p>
+    <p class="back-link">
+      <a href="../index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Go Back</a>
+    </p>
+
     <div class="container">
       <div class="left">
         <div class="proj-media">
-            <img src="../assets/rover-circuit.jpg" alt="Avatar" />
+          <img src="../assets/rover-circuit.jpg" alt="Rover circuit board" />
         </div>
- 
-        <h2>JPL Production Control Department Dashboard <i class="fa fa-rocket" aria-hidden="true"></i></i></h2>
+
+        <h2>JPL Production Control Department Dashboard <i class="fa fa-rocket" aria-hidden="true"></i></h2>
         <p>Skills: PHP, Python Django, MySQL, API integration</p>
-        <br>
+
         <p>Overview</p>
-        <p style="color: black;">As part of the Production Control department focusing on electronic 
-            fabrication manufacturing operations, I developed and maintained a 
-            centralized dashboard used by both technical and non-technical team 
-            members to track the status of all circuit boards in production. This tool 
-            streamlined manufacturing workflows, improved transparency, and 
-            ensured stakeholders had real-time updates on printed circuit board assembly progress.
+        <p class="proj-body-text">
+          As part of the Production Control department focusing on electronic fabrication
+          manufacturing operations, I developed and maintained a centralized dashboard used by both
+          technical and non-technical team members to track the status of all circuit boards in
+          production. This tool streamlined manufacturing workflows, improved transparency, and
+          ensured stakeholders had real-time updates on printed circuit board assembly progress.
         </p>
+
         <p>Research</p>
-        <p style="color: black;">I spoke with end-users from different roles to understand their 
-            workflow priorities and identified the important production metrics 
-            to track. I also studied existing departmental tools and API 
-            documentation from other systems to determine optimal integration points.
+        <p class="proj-body-text">
+          I spoke with end-users from different roles to understand their workflow priorities and
+          identified the important production metrics to track. I also studied existing departmental
+          tools and API documentation from other systems to determine optimal integration points.
         </p>
+
         <p>Goals</p>
         <ul>
-            <li>Create a single source for production status accessible to all roles.</li>
-            <li>Reduce the manual effort required to gather production updates.</li>
-            <li>Enable better cross-department collaboration through shared, real-time data.</li>
+          <li>Create a single source for production status accessible to all roles.</li>
+          <li>Reduce the manual effort required to gather production updates.</li>
+          <li>Enable better cross-department collaboration through shared, real-time data.</li>
         </ul>
+
         <p>Obstacles</p>
         <ul>
-            <li>Refactoring a previous ColdFusion iteration of the dashboard to a PHP application.</li>
-            <li>Diverse user base with varying levels of technical expertise.</li>
-            <li>Data scattered across multiple departmental systems without unified reporting.</li>
-            <li>Need for the dashboard to adapt to evolving production requirements 
-                as the team wanted to switch to Django to match with the other departments.</li>
+          <li>Refactoring a previous ColdFusion iteration of the dashboard to a PHP application.</li>
+          <li>Diverse user base with varying levels of technical expertise.</li>
+          <li>Data scattered across multiple departmental systems without unified reporting.</li>
+          <li>Need for the dashboard to adapt to evolving production requirements as the team wanted to switch to Django to match with the other departments.</li>
         </ul>
+
         <p>Solution</p>
         <ul>
-            <li>Designed and implemented a web-based dashboard with a user-friendly interface tailored to mixed-technical audiences.</li>
-            <li>Built customizable views and filters so teams could focus on data relevant to their roles.</li>
-            <li>Integrated APIs from other teams to automate data retrieval and eliminate duplicate entry.</li>
-            <li>Conducted training sessions and created user guides to help non-technical staff adopt the tool quickly.</li>
+          <li>Designed and implemented a web-based dashboard with a user-friendly interface tailored to mixed-technical audiences.</li>
+          <li>Built customizable views and filters so teams could focus on data relevant to their roles.</li>
+          <li>Integrated APIs from other teams to automate data retrieval and eliminate duplicate entry.</li>
+          <li>Conducted training sessions and created user guides to help non-technical staff adopt the tool quickly.</li>
         </ul>
+
         <p>Results</p>
         <ul>
-            <li>Improved cross-team visibility, allowing leads to identify bottlenecks earlier in the assembly cycle.</li>
-            <li>Received positive feedback from engineers and production staff for improving accessibility of data.</li>
+          <li>Improved cross-team visibility, allowing leads to identify bottlenecks earlier in the assembly cycle.</li>
+          <li>Received positive feedback from engineers and production staff for improving accessibility of data.</li>
         </ul>
+
         <p>Reflection</p>
-        <p style="color: black;">
-            I ended up learning a lot about printed circuit boards and polymerics 
-            without ever entering the cleanrooms. Also, the refactoring of ColdFusion 
-            was tedious so I'm glad the switch to Django was able to be done from 
-            scratch. There was still a lot to be done and a lot that I was hoping 
-            to add to the application, so it's really disappointing to see the 
-            efab team halted on this progress due to the NASA budget cut.
-        </p>  
+        <p class="proj-body-text">
+          I ended up learning a lot about printed circuit boards and polymerics without ever entering
+          the cleanrooms. Also, the refactoring of ColdFusion was tedious so I'm glad the switch to
+          Django was able to be done from scratch. There was still a lot to be done and a lot that I
+          was hoping to add to the application, so it's really disappointing to see the efab team
+          halted on this progress due to the NASA budget cut.
+        </p>
       </div>
     </div>
-    <br>
 
     <script src="../script.js"></script>
   </body>

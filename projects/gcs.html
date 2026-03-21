@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Kayla Tang | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -18,127 +18,119 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
-    <div class="header" id="topnav">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <nav class="header" id="topnav">
+      <button class="icon" aria-label="Toggle navigation" onclick="myFunction()">
         <i class="fa fa-bars"></i>
-      </a>
-
+      </button>
       <a href="../index.html" class="btn active">Work</a>
       <a href="../projects.html" class="btn">Projects</a>
       <a href="../about.html" class="btn">About Me</a>
-      <!--<a href="#resume" class="btn">Resume</a>-->
-    </div>
+    </nav>
 
-    <p style="padding-left: 5%;"><a href="../index.html"> <i class="fa fa-chevron-left" aria-hidden="true"></i> Go Back </a></p>
+    <p class="back-link">
+      <a href="../index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i> Go Back</a>
+    </p>
+
     <div class="container">
       <div class="left">
-
         <div class="proj-media">
-            <img src="../assets/ngcp-gcs.jpg" alt="" />
+          <img src="../assets/ngcp-gcs.jpg" alt="NGCP Ground Control System dashboard" />
         </div>
- 
+
         <h2>Northrop Grumman Collaboration Project Ground Control System <i class="fa fa-map-marker" aria-hidden="true"></i></h2>
-        <p>Skills: TypeScript, Vue, Python, SQL, API development </p>
-        <p><i class="fa fa-laptop" aria-hidden="true"></i> NGCP Page: <a href="https://www.cpp.edu/engineering/ngcp/" target="_blank">CPP NGCP</a> </p>
-        <p><i class="fa fa-github" aria-hidden="true"></i> GitHub Org: <a href="https://github.com/ngcp-project" target="_blank">NGCP GitHub</a></p>
-        <br>
+        <p>Skills: TypeScript, Vue, Python, SQL, API development</p>
+        <p><i class="fa fa-laptop" aria-hidden="true"></i> NGCP Page: <a href="https://www.cpp.edu/engineering/ngcp/" target="_blank" rel="noopener noreferrer">CPP NGCP</a></p>
+        <p><i class="fa fa-github" aria-hidden="true"></i> GitHub Org: <a href="https://github.com/ngcp-project" target="_blank" rel="noopener noreferrer">NGCP GitHub</a></p>
 
         <div class="container-2">
           <div class="left">
             <div class="proj-media-2">
-              <img src="../assets/ugv.GIF" alt="" />
+              <img src="../assets/ugv.GIF" alt="UGV in action" />
             </div>
           </div>
 
           <div class="right">
             <p>Overview</p>
-            <p style="color: black;">This simulated hiker rescue mission was a joint 
-                collaboration between Cal Poly Pomona, Cal Poly San Luis Obispo, and 
-                Northrop Grumman. The company provided a Request for Proposal (RFP) 
-                outlining mission objectives for unmanned aerial and ground vehicles. 
-                As the Frontend Lead for the Ground Control System (GCS), I developed 
-                a telemetry dashboard to visualize mission data in real time. After 
-                two chief engineers left the project, I also assumed that role, 
-                coordinating directly with the project manager and Northrop representatives.
+            <p class="proj-body-text">
+              This simulated hiker rescue mission was a joint collaboration between Cal Poly Pomona,
+              Cal Poly San Luis Obispo, and Northrop Grumman. The company provided a Request for
+              Proposal (RFP) outlining mission objectives for unmanned aerial and ground vehicles.
+              As the Frontend Lead for the Ground Control System (GCS), I developed a telemetry
+              dashboard to visualize mission data in real time. After two chief engineers left the
+              project, I also assumed that role, coordinating directly with the project manager and
+              Northrop representatives.
             </p>
             <p>Research</p>
-            <p style="color: black;">The team had a full turnover with all new members, 
-                including myself, so I reached out to previous GCS alumni to ask for 
-                any usable legacy code. With the system design team, we analyzed 
-                Northrop Grumman's mission requirements to determine derived requirements. 
-                Reviewed mapping libraries, real-time data pipelines, and REST API 
-                integration methods to ensure low-latency mission tracking.
+            <p class="proj-body-text">
+              The team had a full turnover with all new members, including myself, so I reached out
+              to previous GCS alumni to ask for any usable legacy code. With the system design team,
+              we analyzed Northrop Grumman's mission requirements to determine derived requirements.
+              Reviewed mapping libraries, real-time data pipelines, and REST API integration methods
+              to ensure low-latency mission tracking.
             </p>
           </div>
         </div>
-        <br>
 
         <p>Goals</p>
         <ul>
-            <li>Deliver an interactive dashboard for tracking unmanned vehicle positions, 
-                mission stages, and telemetry metrics.</li>
-            <li>Bridge communication between frontend, backend, and vehicle teams.</li>
-            <li>Recover from delayed project start and meet mission deadlines despite reduced staffing.</li>
+          <li>Deliver an interactive dashboard for tracking unmanned vehicle positions, mission stages, and telemetry metrics.</li>
+          <li>Bridge communication between frontend, backend, and vehicle teams.</li>
+          <li>Recover from delayed project start and meet mission deadlines despite reduced staffing.</li>
         </ul>
+
         <p>Obstacles</p>
         <ul>
-            <li>Recruitment challenges due to accepted developers quitting after getting ghosted by the previous chief.</li>
-            <li>Our team started significantly behind schedule after recruiting new members and onboarding.</li>
-            <li>Need for real-time data accuracy and stability under field test conditions.</li>
+          <li>Recruitment challenges due to accepted developers quitting after getting ghosted by the previous chief.</li>
+          <li>Our team started significantly behind schedule after recruiting new members and onboarding.</li>
+          <li>Need for real-time data accuracy and stability under field test conditions.</li>
         </ul>
-        <br>
 
         <div class="container-2">
           <div class="left">
             <div class="proj-media-2">
-              <img src="../assets/gcs-camera.jpg" alt="" />
+              <img src="../assets/gcs-camera.jpg" alt="GCS camera view" />
             </div>
           </div>
 
           <div class="right">
             <p>Solution</p>
             <ul>
-                <li>Recruited and onboarded new GCS developers while establishing a clear project plan and task assignments.</li>
-                <li>Implemented telemetry mapping with mission-stage tracking, enabling operators to ping and visualize unmanned vehicle locations across a field.</li>
-                <li>Built RESTful endpoints for data exchange and integrated real-time mission data into interactive UI views.</li>
+              <li>Recruited and onboarded new GCS developers while establishing a clear project plan and task assignments.</li>
+              <li>Implemented telemetry mapping with mission-stage tracking, enabling operators to ping and visualize unmanned vehicle locations across a field.</li>
+              <li>Built RESTful endpoints for data exchange and integrated real-time mission data into interactive UI views.</li>
             </ul>
             <p>Results</p>
             <ul>
-                <li>Helped GCS catch up from a late start to deliver a working system in time for mission demonstrations.</li>
-                <li>Successfully presented the GCS dashboard to senior Northrop Grumman engineers, 
-                    receiving strong positive feedback on functionality and usability.</li>
+              <li>Helped GCS catch up from a late start to deliver a working system in time for mission demonstrations.</li>
+              <li>Successfully presented the GCS dashboard to senior Northrop Grumman engineers, receiving strong positive feedback on functionality and usability.</li>
             </ul>
           </div>
         </div>
-        <br>
 
         <div class="container-2">
           <div class="left">
             <div class="proj-media-2">
-              <img src="../assets/gcs-setup.jpg" alt="" />
+              <img src="../assets/gcs-setup.jpg" alt="GCS hardware setup" />
             </div>
           </div>
 
           <div class="right">
             <p>Reflection</p>
-            <p style="color: black;">
-                This project brought me both intense stress and immense pride. From 
-                reaching out to alumni for legacy code after two PMs left, to watching 
-                our map display and being able to ping connected devices in real time, 
-                the journey was both exhausting and rewarding. I'm grateful I could 
-                continue supporting the project beyond my term and witness the progress 
-                made by all software and hardware teams.
-            </p> 
+            <p class="proj-body-text">
+              This project brought me both intense stress and immense pride. From reaching out to
+              alumni for legacy code after two PMs left, to watching our map display and being able
+              to ping connected devices in real time, the journey was both exhausting and rewarding.
+              I'm grateful I could continue supporting the project beyond my term and witness the
+              progress made by all software and hardware teams.
+            </p>
           </div>
         </div>
-        <br>
-        
+
         <div class="proj-media">
-            <img src="../assets/gcs-dinner.jpg" alt="" />
+          <img src="../assets/gcs-dinner.jpg" alt="GCS team dinner" />
         </div>
-        </div>  
+      </div>
     </div>
-    <br>
 
     <script src="../script.js"></script>
   </body>

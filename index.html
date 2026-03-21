@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Kayla Tang | Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -18,60 +18,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="header" id="topnav">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <nav class="header" id="topnav">
+      <button class="icon" aria-label="Toggle navigation" onclick="myFunction()">
         <i class="fa fa-bars"></i>
-      </a>
-
+      </button>
       <a href="index.html" class="btn active">Work</a>
       <a href="projects.html" class="btn">Projects</a>
       <a href="about.html" class="btn">About Me</a>
-      <!--<a href="#resume" class="btn">Resume</a>-->
-    </div>
+    </nav>
 
     <div class="container">
       <div class="left">
         <h2>Hi, I'm Kayla <i class="fa fa-smile-o" aria-hidden="true"></i></h2>
-        <p>
-          Currently working on my Oracle Cloud Infrastructure Certification.
-        </p>
-        <p>Next opportunity in the works...</p>
+        <p>Currently working as a fullstack software engineer.</p>
       </div>
 
       <div class="right">
         <div class="exp">
-          <!--
-        <h4>Currently</h4>
-        <p></p>
-      -->
           <h4>Previously</h4>
+
           <div class="exp-item">
-            <a href="https://www.jpl.nasa.gov/" target="_blank"
-              >NASA Jet Propulsion Lab:</a
-            >
+            <a href="https://www.jpl.nasa.gov/" target="_blank" rel="noopener noreferrer">
+              NASA Jet Propulsion Lab:
+            </a>
             <p>Software Engineer</p>
           </div>
 
           <div class="exp-item">
-            <a
-              href="https://www.cpp.edu/engineering/ngcp/index.shtml"
-              target="_blank"
-              >Northrop Grumman Collaboration Project:</a
-            >
+            <a href="https://www.cpp.edu/engineering/ngcp/index.shtml" target="_blank" rel="noopener noreferrer">
+              Northrop Grumman Collaboration Project:
+            </a>
             <p>GCS Chief Engineer</p>
           </div>
 
           <div class="exp-item">
-            <a href="https://www.cpp.edu/polysec/index.shtml" target="_blank"
-              >CPP's PolySec Cybersecurity Lab:</a
-            >
+            <a href="https://www.cpp.edu/polysec/index.shtml" target="_blank" rel="noopener noreferrer">
+              CPP's PolySec Cybersecurity Lab:
+            </a>
             <p>Web Developer</p>
           </div>
 
           <div class="exp-item">
-            <a href="https://hapii-lab.github.io/" target="_blank"
-              >CPP's HAPII Lab:</a
-            >
+            <a href="https://hapii-lab.github.io/" target="_blank" rel="noopener noreferrer">
+              CPP's HAPII Lab:
+            </a>
             <p>HCI Research Assistant</p>
           </div>
         </div>
@@ -79,110 +69,57 @@
     </div>
 
     <div class="cards-wrapper">
-      <!-- <div class="card">
-        <details>
-          <summary>
-            <img
-              src="assets/broncohacks.jpg"
-              alt="BroncoHacks winners"
-              style="width: 100%"
-            />
-            <div class="cards-info">
-              <h4><b>PC Dashboard</b></h4>
-              <p>CSS - Handed off 2024</p>
-              <p>Skills: Python Django, PHP, SQL</p>
-            </div>
-          </summary>
-          <p class="cards-info">
-            I worked in the production control department focusing on electronic
-            fabrication manufacturing operations. I contributed by developing
-            and maintaining a dashboard for technical and non-technical members
-            to oversee every product that was in production. This helped to
-            streamline manufacturing processes and ensure all staff members were
-            updated on the current projects. Additional duties included guiding
-            teams to use the application, creating new features based on a
-            team's needs, and integrating APIs from other departments.
-          </p>
-        </details>
-      </div> -->
-
-      <button
-        class="card"
-        title="Read more"
-        onclick="redirectToPage('https://limeborghini.github.io/projects/pcdash.html')"
-      >
-        <img src="assets/jpl.jpg" alt="Logo img" style="width: 100%" />
+      <a class="card" href="projects/pcdash.html" title="Read more">
+        <img src="assets/jpl.jpg" alt="Production Control Department Dashboard" />
         <div class="cards-info">
-          <h4><b>Production Control Department Dashboard</b></h4>
+          <h4>Production Control Department Dashboard</h4>
           <p>NASA JPL - Handed off 2024</p>
         </div>
-      </button>
+      </a>
 
-      <button
-        class="card"
-        title="Read more"
-        onclick="redirectToPage('https://limeborghini.github.io/projects/fintools.html')"
-      >
-        <img src="assets/cleanroom.jpg" alt="Logo img" style="width: 100%" />
+      <a class="card" href="projects/fintools.html" title="Read more">
+        <img src="assets/cleanroom.jpg" alt="Cost Estimator" />
         <div class="cards-info">
-          <h4><b>Cost Estimator</b></h4>
+          <h4>Cost Estimator</h4>
           <p>NASA JPL - Completed 2023</p>
         </div>
-      </button>
+      </a>
 
-      <button
-        class="card"
-        title="Read more"
-        onclick="redirectToPage('https://limeborghini.github.io/projects/gcs.html')"
-      >
-        <img src="assets/ngcp_logo.png" alt="Logo img" style="width: 100%" />
+      <a class="card" href="projects/gcs.html" title="Read more">
+        <img src="assets/ngcp_logo.png" alt="Ground Control System" />
         <div class="cards-info">
-          <h4><b>Ground Control System</b></h4>
+          <h4>Ground Control System</h4>
           <p>Northrop Grumman Collab Project - Completed 2023</p>
         </div>
-      </button> 
+      </a>
 
-      <button
-        class="card"
-        title="Read more"
-        onclick="redirectToPage('https://limeborghini.github.io/projects/broncohacks.html')"
-      >
-        <img src="assets/broncohacks-logo.png" alt="Logo img" style="width: 100%" />
+      <a class="card" href="projects/broncohacks.html" title="Read more">
+        <img src="assets/broncohacks-logo.png" alt="BroncoHacks Organizer" />
         <div class="cards-info">
-          <h4><b>BroncoHacks Organizer</b></h4>
+          <h4>BroncoHacks Organizer</h4>
           <p>CPP - Handed off 2024</p>
         </div>
-      </button>  
+      </a>
 
-      <button
-        class="card"
-        title="Read more"
-        onclick="redirectToPage('https://limeborghini.github.io/projects/polysec.html')"
-      >
-        <img src="assets/polysec.JPG" alt="Logo img" style="width: 100%" />
+      <a class="card" href="projects/polysec.html" title="Read more">
+        <img src="assets/polysec.JPG" alt="Website Redesign" />
         <div class="cards-info">
-          <h4><b>Website Redesign</b></h4>
+          <h4>Website Redesign</h4>
           <p>PolySec Cyber Lab - Handed off 2023</p>
         </div>
-      </button> 
+      </a>
 
-      <button
-        class="card"
-        title="Read more"
-        onclick="redirectToPage('https://limeborghini.github.io/projects/hapii.html')"
-      >
-        <img src="assets/hapii-logo.JPG" alt="Logo img" style="width: 100%" />
+      <a class="card" href="projects/hapii.html" title="Read more">
+        <img src="assets/hapii-logo.JPG" alt="Human-Computer Interaction Research" />
         <div class="cards-info">
-          <h4><b>Human-Computer Interaction Research</b></h4>
+          <h4>Human-Computer Interaction Research</h4>
           <p>HAPII Lab - Completed 2022</p>
         </div>
-      </button> 
+      </a>
 
-      <br>
-      <div style="text-align: center;">
+      <div class="footer-note">
         <p>- You can check out my side projects in the <a href="projects.html">Projects</a> section -</p>
       </div>
-      <br>
     </div>
 
     <script src="script.js"></script>
